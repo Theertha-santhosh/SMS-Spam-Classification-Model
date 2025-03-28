@@ -1,7 +1,7 @@
-# # # 📩 SMS Spam Classification Model
+#  📩 SMS Spam Classification Model
 🚀 An advanced machine learning model to classify SMS messages as Spam or Ham (Not Spam) using NLP and ensemble learning techniques.
 Dataset labels splited as spam,ham/Not spam
-# 🔍 Overview
+## 🔍 Overview
 Spam messages are a common issue in SMS communication. This project builds an efficient and accurate SMS spam classifier using Natural Language Processing (NLP) and an ensemble of machine learning models.
 
 The model achieves high accuracy through:
@@ -11,7 +11,14 @@ The model achieves high accuracy through:
 ✅ Ensemble learning (Logistic Regression, Random Forest, XGBoost)
 ✅ Probability-based voting for final predictions
 
-# Model Performance
+### 📂 Dataset
+The model is trained on the SMSSpamCollection dataset, which contains labeled SMS messages:
+✔ Ham (Not Spam) → Legitimate messages
+❌ Spam → Unwanted promotional/scam messages
+
+✅ Data Balancing : Since spam messages are fewer in number, we use SMOTE (Synthetic Minority Oversampling Technique) to balance the dataset and improve classification performance.
+
+### Model Performance
 📌 The model's effectiveness is evaluated using precision, recall, F1-score, and confusion matrix.
 
 🔹 Accuracy: 📈 ~99% (Ensuring minimal false positives and false negatives)
@@ -19,14 +26,10 @@ The model achieves high accuracy through:
 🔹 Recall (Spam Detection Sensitivity): Ensures actual spam is not missed
 🔹 F1-Score: Balances precision and recall for optimal performance
 
-# 📂 Dataset
-The model is trained on the SMSSpamCollection dataset, which contains labeled SMS messages:
-✔ Ham (Not Spam) → Legitimate messages
-❌ Spam → Unwanted promotional/scam messages
+![Spam Classifier](images/banner.png)
 
-✅ Data Balancing : Since spam messages are fewer in number, we use SMOTE (Synthetic Minority Oversampling Technique) to balance the dataset and improve classification performance.
 
-# 🛠️ Technologies Used
+## 🛠️ Technologies Used
 🔹 Python  – Core programming language
 🔹 pandas & NumPy – Data processing
 🔹 nltk  – NLP text preprocessing
@@ -34,7 +37,7 @@ The model is trained on the SMSSpamCollection dataset, which contains labeled SM
 🔹 imbalanced-learn (SMOTE)  – Class balancing
 🔹 XGBoost  – Boosted decision trees
 
-# 🚀 How to Run
+## 🚀 How to Run
 1️⃣ Install Dependencies
 Before running the model, install required libraries:
 
@@ -53,8 +56,8 @@ bash
 Copy
 Edit
 python spam_classifier.py
-# # 📊 Model Training & Evaluation
-📌 Preprocessing Steps:
+## 📊 Model Training & Evaluation
+### 📌 Preprocessing Steps:
 
 Removes special characters
 
@@ -66,13 +69,13 @@ Removes stopwords
 
 Applies stemming using Porter Stemmer
 
-📌 Feature Engineering:
+### 📌 Feature Engineering:
 
 Converts text into TF-IDF features
 
 Uses bigrams to capture word relationships
 
-📌 Machine Learning Models Used:
+### 📌 Machine Learning Models Used:
 ✔ Logistic Regression – Fast & efficient for binary classification
 ✔ Random Forest – Handles non-linearity and prevents overfitting
 ✔ XGBoost – Boosted trees for better decision-making
@@ -85,27 +88,24 @@ Weighted averaging (0.3 LogReg, 0.3 RF, 0.4 XGBoost) is used for final classific
 
 Lower spam detection threshold (0.4) ensures fewer false negatives
 
-📌 Evaluation Metrics:
+### 📌 Evaluation Metrics:
 ✔ Confusion Matrix
 ✔ Precision, Recall, F1-score
 ✔ ROC-AUC Score
 
-📈 Results & Insights
-Metric	Value
-Accuracy	~98%
-Precision	~97%
-Recall	~96%
-F1-Score	~96.5%
-📌 Key Insights:
+## 📈 Results & Insights
+| Metric        | Value   |
+|---------------|--------|
+| **Accuracy**  | 98%    |
+| **Precision** | 97%    |
+| **Recall**    | 96%    |
+| **F1-Score**  | 96.5%  |
+
+## 📌 Key Insights:
 ✔ High precision ensures fewer false spam alerts.
 ✔ High recall captures almost all actual spam messages.
 ✔ Balanced F1-score shows the model is effective for real-world use.
 
-🏆 Future Improvements
-🔹 Train on larger and more diverse datasets
-🔹 Use Deep Learning (LSTMs, Transformers) for better contextual understanding
-🔹 Implement real-time SMS filtering with API integration
 
-🤝 Contributing
-Feel free to fork this repository, open issues, and contribute with new features or performance enhancements!
+## ⭐ If you find this project useful, give it a star ⭐ on GitHub!
 
