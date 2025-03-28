@@ -34,7 +34,7 @@ The model achieves high accuracy through:
 
 ## 📂 Dataset
 The model is trained on the SMSSpamCollection dataset, which contains labeled SMS messages:
-
+(Kaggle Dataset)
 ✔ Ham (Not Spam) → Legitimate messages
 
 ❌ Spam → Unwanted promotional/scam messages
