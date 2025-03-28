@@ -22,7 +22,7 @@ The model achieves high accuracy through:
 
 📌 The model's effectiveness is evaluated using precision, recall, F1-score, and confusion matrix.
 
-🔹 Accuracy: 📈 ~98% (Ensuring minimal false positives and false negatives)
+🔹 Accuracy: 📈 ~99% (Ensuring minimal false positives and false negatives)
 
 🔹 Precision (Spam Detection Accuracy): High precision reduces false spam alerts
 
@@ -40,6 +40,7 @@ Labeled:
 ❌ Spam → Unwanted promotional/scam messages
 
 ✅ Data Balancing: Since spam messages are fewer in number, we use SMOTE (Synthetic Minority Oversampling Technique) to balance the dataset and improve classification performance.
+
 
 ## 🛠️ Technologies Used
 
@@ -68,17 +69,17 @@ pip install pandas nltk scikit-learn imbalanced-learn xgboost numpy
 ```sh
 import nltk
 nltk.download('stopwords')
----
+```
 
 3️⃣ Run the Script
 
 ```sh
 python spam_classifier.py
----
+```
 
 ##  📊 Model Training & Evaluation
 
-📌 Preprocessing Steps:
+### 📌 Preprocessing Steps:
 
 Removes special characters
 
@@ -90,18 +91,18 @@ Removes stopwords
 
 Applies stemming using Porter Stemmer
 
-📌 Feature Engineering:
+### 📌 Feature Engineering:
 
 Converts text into TF-IDF features
 
 Uses bigrams to capture word relationships
 
-📌 Machine Learning Models Used:
+### 📌 Machine Learning Models Used:
 ✔ Logistic Regression – Fast & efficient for binary classification
 ✔ Random Forest – Handles non-linearity and prevents overfitting
 ✔ XGBoost – Boosted trees for better decision-making
 
-📌 Prediction Strategy:
+### 📌 Prediction Strategy:
 
 Each model predicts the probability of a message being spam
 
@@ -109,7 +110,7 @@ Weighted averaging (0.3 LogReg, 0.3 RF, 0.4 XGBoost) is used for final classific
 
 Lower spam detection threshold (0.4) ensures fewer false negatives
 
-📌 Evaluation Metrics:
+### 📌 Evaluation Metrics:
 
 ✔ Confusion Matrix
 
@@ -117,7 +118,7 @@ Lower spam detection threshold (0.4) ensures fewer false negatives
 
 ✔ ROC-AUC Score
 
-📈 Results & Insights
+## 📈 Results & Insights
 
 | Metric         | Value   |
 |---------------|--------|
@@ -126,20 +127,9 @@ Lower spam detection threshold (0.4) ensures fewer false negatives
 | **Recall**    | 96%    |
 | **F1-Score**  | 96.5%  |
 
-📌 Key Insights:
+### 📌 Key Insights:
 ✔ High precision ensures fewer false spam alerts.
 ✔ High recall captures almost all actual spam messages.
 ✔ Balanced F1-score shows the model is effective for real-world use.
 
-🏆 Future Improvements
-🔹 Train on larger and more diverse datasets
-🔹 Use Deep Learning (LSTMs, Transformers) for better contextual understanding
-🔹 Implement real-time SMS filtering with API integration
-
-🤝 Contributing
-Feel free to fork this repository, open issues, and contribute with new features or performance enhancements!
-
-📜 License
-This project is open-source and available under the MIT License.
-
-⭐ If you find this project useful, give it a star ⭐ on GitHub! 🚀
+## ⭐ If you find this project useful, give it a star ⭐ on GitHub! 🚀
