@@ -132,4 +132,4 @@ Lower spam detection threshold (0.4) ensures fewer false negatives
 ✔ High recall captures almost all actual spam messages.
 ✔ Balanced F1-score shows the model is effective for real-world use.
 
-## ⭐ If you find this project useful, give it a star ⭐ on GitHub! 🚀
+
