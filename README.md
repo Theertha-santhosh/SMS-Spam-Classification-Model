@@ -1,29 +1,43 @@
 #  📩 SMS Spam Classification Model
 🚀 An advanced machine learning model to classify SMS messages as Spam or Ham (Not Spam) using NLP and ensemble learning techniques.
 Dataset labels splited as spam,ham/Not spam
+
 ## 🔍 Overview
 Spam messages are a common issue in SMS communication. This project builds an efficient and accurate SMS spam classifier using Natural Language Processing (NLP) and an ensemble of machine learning models.
 
 The model achieves high accuracy through:
+
+
 ✅ Text preprocessing (Cleaning, tokenization, stopword removal, stemming)
+
 ✅ TF-IDF vectorization for feature extraction
+
 ✅ SMOTE-based oversampling to handle class imbalance
+
 ✅ Ensemble learning (Logistic Regression, Random Forest, XGBoost)
+
 ✅ Probability-based voting for final predictions
 
 ### 📂 Dataset
+
+
 The model is trained on the SMSSpamCollection dataset, which contains labeled SMS messages:
 ✔ Ham (Not Spam) → Legitimate messages
+
 ❌ Spam → Unwanted promotional/scam messages
 
 ✅ Data Balancing : Since spam messages are fewer in number, we use SMOTE (Synthetic Minority Oversampling Technique) to balance the dataset and improve classification performance.
 
 ### Model Performance
+
 📌 The model's effectiveness is evaluated using precision, recall, F1-score, and confusion matrix.
 
 🔹 Accuracy: 📈 ~99% (Ensuring minimal false positives and false negatives)
+
 🔹 Precision (Spam Detection Accuracy): High precision reduces false spam alerts
+
 🔹 Recall (Spam Detection Sensitivity): Ensures actual spam is not missed
+
 🔹 F1-Score: Balances precision and recall for optimal performance
 
 ![Spam Classifier](images/banner.png)
