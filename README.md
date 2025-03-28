@@ -44,33 +44,39 @@ The model is trained on the SMSSpamCollection dataset, which contains labeled SM
 
 
 ## 🛠️ Technologies Used
+
 🔹 Python  – Core programming language
+
 🔹 pandas & NumPy – Data processing
+
 🔹 nltk  – NLP text preprocessing
+
 🔹 scikit-learn – Machine learning algorithms
+
 🔹 imbalanced-learn (SMOTE)  – Class balancing
+
 🔹 XGBoost  – Boosted decision trees
 
 ## 🚀 How to Run
-1️⃣ Install Dependencies
+
+### 1️⃣ Install Dependencies
+
 Before running the model, install required libraries:
 
-bash
-Copy
-Edit
 pip install pandas nltk scikit-learn imbalanced-learn xgboost numpy
-2️⃣ Download Stopwords (if not installed)
-python
-Copy
-Edit
+
+### 2️⃣ Download Stopwords (if not installed)
+
 import nltk
+
 nltk.download('stopwords')
-3️⃣ Run the Script
-bash
-Copy
-Edit
+
+### 3️⃣ Run the Script
+
 python spam_classifier.py
+
 ## 📊 Model Training & Evaluation
+
 ### 📌 Preprocessing Steps:
 
 Removes special characters
