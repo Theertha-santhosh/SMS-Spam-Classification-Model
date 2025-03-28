@@ -29,7 +29,7 @@ The model achieves high accuracy through:
 🔹 Recall (Spam Detection Sensitivity): Ensures actual spam is not missed
 
 🔹 F1-Score: Balances precision and recall for optimal performance
-![Spam Classifier](images/banner.png)
+![Spam Classifier](running_vscode.png)
 
 
 ## 📂 Dataset
