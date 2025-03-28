@@ -64,20 +64,26 @@ The model is trained on the SMSSpamCollection dataset, which contains labeled SM
 
 To run this project, install the required dependencies.
 
+Install required Python libraries
+
 ```sh
-# Install required Python libraries
 pip install pandas nltk scikit-learn imbalanced-learn xgboost numpy
+```
 
 
 ### 2️⃣ Download Stopwords (if not installed)
 
+```sh
 import nltk
-
 nltk.download('stopwords')
+```
+
 
 ### 3️⃣ Run the Script
 
+```sh
 python spam_classifier.py
+```
 
 ## 📊 Model Training & Evaluation
 
