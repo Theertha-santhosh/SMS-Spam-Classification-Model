@@ -61,9 +61,13 @@ The model is trained on the SMSSpamCollection dataset, which contains labeled SM
 
 ### 1️⃣ Install Dependencies
 
-Before running the model, install required libraries:
 
+To run this project, install the required dependencies.
+
+```sh
+# Install required Python libraries
 pip install pandas nltk scikit-learn imbalanced-learn xgboost numpy
+
 
 ### 2️⃣ Download Stopwords (if not installed)
 
