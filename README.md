@@ -1,26 +1,26 @@
 # 📩 SMS Spam Classification Model
 
-🚀 An advanced machine learning model to classify SMS messages as Spam or Ham (Not Spam) using NLP and ensemble learning techniques.
+  An advanced machine learning model to classify SMS messages as Spam or Ham (Not Spam) using NLP and ensemble learning techniques.
 
 ## 🔍 Overview
 
 Spam messages are a common issue in SMS communication. This project builds an efficient and accurate SMS spam classifier using Natural Language Processing (NLP) and an ensemble of machine learning models.
 
-The model achieves high accuracy through:
+### The model achieves high accuracy through:
 
-✅ Text preprocessing (Cleaning, tokenization, stopword removal, stemming)
+🔹 Text preprocessing (Cleaning, tokenization, stopword removal, stemming)
 
-✅ TF-IDF vectorization for feature extraction
+🔹 TF-IDF vectorization for feature extraction
 
-✅ SMOTE-based oversampling to handle class imbalance
+ 🔹SMOTE-based oversampling to handle class imbalance
 
-✅ Ensemble learning (Logistic Regression, Random Forest, XGBoost)
+ 🔹 Ensemble learning (Logistic Regression, Random Forest, XGBoost)
 
-✅ Probability-based voting for final predictions
+ 🔹 Probability-based voting for final predictions
 
-## 🎯 Model Performance
+## 📌 Model Performance
 
-📌 The model's effectiveness is evaluated using precision, recall, F1-score, and confusion matrix.
+ The model's effectiveness is evaluated using precision, recall, F1-score, and confusion matrix.
 
 🔹 Accuracy: 📈 ~99% (Ensuring minimal false positives and false negatives)
 
@@ -79,7 +79,7 @@ python spam_classifier.py
 
 ##  📊 Model Training & Evaluation
 
-### 📌 Preprocessing Steps:
+###  Preprocessing Steps:
 
 Removes special characters
 
@@ -91,18 +91,18 @@ Removes stopwords
 
 Applies stemming using Porter Stemmer
 
-### 📌 Feature Engineering:
+###  Feature Engineering:
 
 Converts text into TF-IDF features
 
 Uses bigrams to capture word relationships
 
-### 📌 Machine Learning Models Used:
+###  Machine Learning Models Used:
 ✔ Logistic Regression – Fast & efficient for binary classification
 ✔ Random Forest – Handles non-linearity and prevents overfitting
 ✔ XGBoost – Boosted trees for better decision-making
 
-### 📌 Prediction Strategy:
+###  Prediction Strategy:
 
 Each model predicts the probability of a message being spam
 
@@ -110,7 +110,7 @@ Weighted averaging (0.3 LogReg, 0.3 RF, 0.4 XGBoost) is used for final classific
 
 Lower spam detection threshold (0.4) ensures fewer false negatives
 
-### 📌 Evaluation Metrics:
+###  Evaluation Metrics:
 
 ✔ Confusion Matrix
 
@@ -118,7 +118,7 @@ Lower spam detection threshold (0.4) ensures fewer false negatives
 
 ✔ ROC-AUC Score
 
-## 📈 Results & Insights
+##  Results & Insights
 
 | Metric         | Value   |
 |---------------|--------|
@@ -127,7 +127,7 @@ Lower spam detection threshold (0.4) ensures fewer false negatives
 | **Recall**    | 96%    |
 | **F1-Score**  | 96.5%  |
 
-### 📌 Key Insights:
+###  Key Insights:
 ✔ High precision ensures fewer false spam alerts.
 ✔ High recall captures almost all actual spam messages.
 ✔ Balanced F1-score shows the model is effective for real-world use.
